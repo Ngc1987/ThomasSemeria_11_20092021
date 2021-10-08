@@ -1,0 +1,32 @@
+@import "../../Variables/Variables.scss";
+
+.sampleLoc {
+	width: 100%;
+	height: 255px;
+	border-radius: 10px;
+	margin-top: 20px;
+	background: linear-gradient($primary, rgba(0,0,0,0.8));
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+
+	p {
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 20px;
+		margin-left: 20px;
+	}
+}
+
+@media screen and(min-width: 700px) {
+	.sampleLoc {
+		width: 45%;
+		margin-bottom: 20px;
+	}
+}
+@media screen and(min-width: 900px) {
+	.sampleLoc {
+		width: 30%;
+	}
+}

@@ -1,0 +1,52 @@
+@import "../../Variables/Variables.scss";
+
+.toggleDiv {
+	background: #F6F6F6;
+	border-radius: 5px;
+	margin-top: 15px;
+
+	&__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 5px;
+		padding: 0 10px;
+		font-size: 13px;
+		font-weight: 500;
+		color: #fff;
+		height: 35px;
+		background: $primary;
+	}
+
+	&__arrow {
+		width: 15px;
+	}
+
+	&__content {
+		margin: 15px 15px;
+		color: $primary;
+		transition: all 0.4s ease;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+	.open {
+		height: auto;
+	}
+
+	.closed {
+		height: 0;
+		width: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.toggleDiv {
+		margin-top: 20px;
+		width: 48%;
+	}
+}

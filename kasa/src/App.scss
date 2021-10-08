@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+
+.App {
+  // text-align: center;
+  margin: 0 auto;
+	margin-top: 20px;
+	// max-width: 1240px;
+	padding-left: 20px;
+	padding-right: 20px;
+  font-family: Montserrat;
+}
+
+
+*, ::after, ::before {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+// body {
+// 	margin: 0 auto;
+// 	margin-top: 20px;
+// 	// max-width: 1240px;
+// 	padding-left: 20px;
+// 	padding-right: 20px;
+// }
