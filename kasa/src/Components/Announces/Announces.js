@@ -13,26 +13,9 @@ export default class Announces extends Component {
 		  isLoaded: false,
 		  appartments: []
 		};
-		// let get = props.location.search;
-		// // const gett = this.extractParamsUrl(get)
-		// console.log(get)
 
 		this.componentDidMount = this.componentDidMount.bind(this);
-		// this.extractParamsUrl = this.extractParamsUrl.bind(this);
 	}
-
-	//   extractParamsUrl(chaineGET) {
-	// 	chaineGET = chaineGET.split('&');
-	// 	var result = {};
-	
-	// 	chaineGET.forEach(function(el){
-	// 		var param = el.split('=');
-	// 		param[0] = param[0].replace('?', '');
-	// 		result[param[0]] = param[1];
-	// 	});
-	
-	// 	return result;
-	// }
 	
 	  componentDidMount() {
 		fetch("http://localhost:3000/data/logements.json")
@@ -43,7 +26,7 @@ export default class Announces extends Component {
 				isLoaded: true,
 				appartments: result
 			  });
-			  console.log(result)
+			//   console.log(result)
 			},
 			// Remarque : il est important de traiter les erreurs ici
 			// au lieu d'utiliser un bloc catch(), pour ne pas passer à la trappe
@@ -53,7 +36,7 @@ export default class Announces extends Component {
 				isLoaded: true,
 				error
 			  });
-			  console.log(error)
+			//   console.log(error)
 			}
 		  )
 	  }

@@ -6,8 +6,119 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import starRed from "../../Assets/starRed.svg"
 import starGrey from "../../Assets/starGrey.svg"
 
+
+
 export default class Logement extends Component {
-	render() {
+
+
+	constructor(props) {
+		super(props);
+		this.state = {
+		  error: null,
+		  isLoaded: false,
+		  appartments: [],
+		  idLocation: "",
+		  appartment: {	}
+		};
+
+		
+		
+
+		this.componentDidMount = this.componentDidMount.bind(this);
+		// this.idLocOnState = this.idLocOnState.bind(this);
+	}
+
+	
+	
+			// idLocOnState()
+
+	
+	componentDidMount() {
+
+		fetch("http://localhost:3000/data/logements.json")
+		  	.then(res => res.json())
+		  	.then(
+			(result) => {
+			  this.setState({
+				isLoaded: true,
+				appartments: result
+			  });
+			  console.log(result)
+
+			  let idLocation = window.location.search.substr(4);
+			  let logement = this.state.appartments.filter((el) => el.id === idLocation)
+
+			  this.setState({
+				  appartment: logement
+			  })
+
+			},
+			// Remarque : il est important de traiter les erreurs ici
+			// au lieu d'utiliser un bloc catch(), pour ne pas passer à la trappe
+			// des exceptions provenant de réels bugs du composant.
+			(error) => {
+			  this.setState({
+				isLoaded: true,
+				error
+			  });
+			  console.log(error)
+			}
+			)
+
+
+			// console.log(this.state)
+			// let idLocation = window.location.search.substr(4);
+			// this.setState({
+			// 	idLocation: idLocation
+			// })
+			
+			// console.log(this.state.appartments)
+			// let logement = this.state.appartments.filter((el) => el.id === idLocation)
+			// console.log(logement)
+			// this.setState({
+			// 	appartment: logement
+			// })
+			
+
+			
+			
+			// let idLogement = window.location.search.substr(4);
+			// // console.log(idLogement)
+			// this.setState({
+			// 	idLocation: idLogement
+			// })
+
+			// let logAAfficher = this.state.appartments.find((el) => el.id == this.state.idLocation)
+			// console.log(logAAfficher)
+			// this.setState({
+			// 	appartments: logAAfficher
+			// })
+			// console.log(logAAfficher)
+
+	}
+	
+
+	  
+		  
+		  
+		  
+		  render() {
+
+
+		console.log(this.state)
+		// let idLocation = window.location.search.substr(4);
+		// console.log(idLocation)
+		// console.log(this.state.appartments)
+		// let logements = this.state.appartments
+		// console.log(logements)
+		// let logement = logements.filter((el) => el.id === idLocation)
+		// console.log(logement)
+		// this.setState({
+		// 	appartment: logement
+		// })
+		// console.log(logement)
+
+
 		return (
 			<main className="logement">
 				<div className="logement__pic" >

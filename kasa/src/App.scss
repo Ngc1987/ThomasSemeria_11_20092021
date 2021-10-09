@@ -4,14 +4,21 @@
 
 .App {
   // text-align: center;
-  margin: 0 auto;
+  	margin: 0 auto;
 	margin-top: 20px;
 	// max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
-  font-family: Montserrat;
+	height: 100vh;
+	// position: relative;
+  	font-family: Montserrat;
+  
+  
 }
-
+// body {
+// 	position: relative;
+// 	height: 100vh;
+// }
 
 *, ::after, ::before {
 	margin: 0;
