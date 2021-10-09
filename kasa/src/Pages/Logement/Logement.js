@@ -66,35 +66,6 @@ export default class Logement extends Component {
 			)
 
 
-			// console.log(this.state)
-			// let idLocation = window.location.search.substr(4);
-			// this.setState({
-			// 	idLocation: idLocation
-			// })
-			
-			// console.log(this.state.appartments)
-			// let logement = this.state.appartments.filter((el) => el.id === idLocation)
-			// console.log(logement)
-			// this.setState({
-			// 	appartment: logement
-			// })
-			
-
-			
-			
-			// let idLogement = window.location.search.substr(4);
-			// // console.log(idLogement)
-			// this.setState({
-			// 	idLocation: idLogement
-			// })
-
-			// let logAAfficher = this.state.appartments.find((el) => el.id == this.state.idLocation)
-			// console.log(logAAfficher)
-			// this.setState({
-			// 	appartments: logAAfficher
-			// })
-			// console.log(logAAfficher)
-
 	}
 	
 
@@ -106,17 +77,6 @@ export default class Logement extends Component {
 
 
 		console.log(this.state)
-		// let idLocation = window.location.search.substr(4);
-		// console.log(idLocation)
-		// console.log(this.state.appartments)
-		// let logements = this.state.appartments
-		// console.log(logements)
-		// let logement = logements.filter((el) => el.id === idLocation)
-		// console.log(logement)
-		// this.setState({
-		// 	appartment: logement
-		// })
-		// console.log(logement)
 
 
 		return (
