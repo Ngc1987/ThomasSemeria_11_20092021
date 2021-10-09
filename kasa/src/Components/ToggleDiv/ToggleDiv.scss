@@ -24,12 +24,13 @@
 	}
 
 	&__content {
-		margin: 15px 15px;
+		padding: 15px 15px;
 		color: $primary;
-		transition: all 0.4s ease;
+		transition: all 0.3s ease;
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 1.5;
+		overflow: hidden;
 	}
 
 	.open {
@@ -38,15 +39,17 @@
 
 	.closed {
 		height: 0;
-		width: 0;
+		// width: 0;
 		overflow: hidden;
 		padding: 0;
+		margin: 0;
+		background: #fff;
 	}
 }
 
 @media screen and(min-width: 768px) {
 	.toggleDiv {
 		margin-top: 20px;
-		width: 48%;
+		width: 100%;
 	}
 }

@@ -159,5 +159,8 @@
 		flex-direction: row;
 		justify-content: space-between;
 
+		&__logement {
+			width: 48%;
+		}
 	}
 }

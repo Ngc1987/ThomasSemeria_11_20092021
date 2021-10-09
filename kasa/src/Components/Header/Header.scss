@@ -16,6 +16,10 @@ header {
 		justify-content: space-between;
 		align-items: center;
 	
+		a {
+			min-width: fit-content;
+		}
+		
 		span {
 			// margin-left: 50px;
 			color: $primary;
@@ -23,12 +27,18 @@ header {
 			font-weight: 500;
 			font-size: 12px;
 			text-transform: uppercase;
+			// min-width: 100px;
 		}
 		
 	}
 
-	span:nth-child(1) {
+	a:nth-child(1) {
 		margin-right: 15px;
+	}
+
+	.underlined {
+		text-decoration: underline;
+		color: $primary;
 	}
 }
 

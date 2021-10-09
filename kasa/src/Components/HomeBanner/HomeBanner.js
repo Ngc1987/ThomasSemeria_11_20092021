@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import "./HeaderPagePic.scss"
-import headerPic from './headerPic.jpg'; // with import
+import "./HomeBanner.scss"
+import homeBanner from './homeBanner.jpg'; // with import
 
-export default class HeaderPagePic extends Component {
+export default class HomeBanner extends Component {
 	render() {
 		return (
 			<div className="header__pic">
 				<div className="header__pic-overlay"></div>
-				<img src={headerPic} alt="" />
+				<img className="picAnim" src={homeBanner} alt="" />
 				<p>Chez vous,</p>
 				<p>partout et ailleurs</p>
 			</div>

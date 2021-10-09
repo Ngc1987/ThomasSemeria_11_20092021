@@ -57,8 +57,8 @@ export default class Logement extends Component {
 				</section>
 
 				<div className="toggleDivs">
-					<ToggleDiv title="Description" />
-					<ToggleDiv title="Équipements" />
+					<ToggleDiv className="toggleDivs__logement" title="Description" />
+					<ToggleDiv className="toggleDivs__logement" title="Équipements" />
 				</div>
 
 			</main>

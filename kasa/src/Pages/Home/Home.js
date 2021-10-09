@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import Announces from '../../Components/Announces/Announces'
 import Header from '../../Components/Header/Header'
-import HeaderPagePic from '../../Components/HeaderPagePic/HeaderPagePic'
+import HomeBanner from '../../Components/HomeBanner/HomeBanner'
 
 export default class Home extends Component {
 	render() {
 		return (
 			<>
 				
-				<HeaderPagePic />
+				<HomeBanner />
 
 				<Announces />
 			</>

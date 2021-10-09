@@ -1,0 +1,23 @@
+.toggleDiv {
+	margin-top: 20px;
+}
+
+
+
+
+@media screen and(min-width: 768px) {
+	.APropos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.aproposToggleDivs {
+		width: 80%;
+	}
+}
+// @media screen and(min-width: 900px) {
+	
+// 	.toggleDiv {
+// 		width: 80%;
+// 	}
+// }

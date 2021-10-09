@@ -3,10 +3,12 @@ import "./SampleLoc.scss"
 import React, { Component } from 'react'
 
 export default class SampleLoc extends Component {
-	render() {
+	render(props) {
+		// console.log(this.props)
 		return (
 			<div className="sampleLoc">
-				<p>Titre de la location</p>
+				<p>{this.props.appartInfos.title}</p>
+				<img src={this.props.appartInfos.cover} alt="" />
 			</div>
 		)
 	}
