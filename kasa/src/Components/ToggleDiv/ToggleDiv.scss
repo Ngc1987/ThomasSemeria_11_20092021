@@ -4,6 +4,9 @@
 	background: #F6F6F6;
 	border-radius: 5px;
 	margin-top: 15px;
+	height: fit-content;
+
+	
 
 	&__title {
 		display: flex;
@@ -12,7 +15,7 @@
 		align-items: center;
 		border-radius: 5px;
 		padding: 0 10px;
-		font-size: 13px;
+		// font-size: 13px;
 		font-weight: 500;
 		color: #fff;
 		height: 35px;
@@ -27,18 +30,18 @@
 		padding: 15px 15px;
 		color: $primary;
 		transition: all 0.3s ease;
-		font-size: 12px;
+		// font-size: 12px;
 		font-weight: 400;
 		line-height: 1.5;
 		overflow: hidden;
 	}
 
 	.open {
-		height: auto;
+		max-height: 160px;
 	}
 
 	.closed {
-		height: 0;
+		max-height: 0px;
 		// width: 0;
 		overflow: hidden;
 		padding: 0;
@@ -47,9 +50,23 @@
 	}
 }
 
+.bigFont {
+	font-size: 12px;
+}
+
+.smallFont {
+	font-size: 12px;
+}
+
+
 @media screen and(min-width: 768px) {
 	.toggleDiv {
 		margin-top: 20px;
 		width: 100%;
 	}
+
+	.bigFont {
+		font-size: 24px;
+	}
+	
 }

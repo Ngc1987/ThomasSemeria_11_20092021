@@ -49,7 +49,7 @@ export default class ToggleDiv extends Component {
 	render(props) {
 
 		
-
+		console.log(typeof this.props.content)
 
 		return (
 
@@ -62,13 +62,15 @@ export default class ToggleDiv extends Component {
 					<img className="toggleDiv__arrow openArrow" src={arrowDown} alt="" />
 				</div>
 				<div className={this.state.isOpened ? "toggleDiv__content open" : "toggleDiv__content closed"}>
-					<p>Climatisation</p>
-					<p>Wi-Fi</p>
-					<p>Cuisine</p>
-					<p>Espace de travail</p>
-					<p>Fer à repasser</p>
-					<p>Sèche-cheveux</p>
-					<p>Cintres</p>
+					
+					{typeof this.props.content === "object" ?
+						this.props.content.map((el, index) =>
+							 <p key={index}>{el}</p>
+						)
+						:
+						<p>{this.props.content}</p>
+					}
+
 				</div>
 			</div>
 		)

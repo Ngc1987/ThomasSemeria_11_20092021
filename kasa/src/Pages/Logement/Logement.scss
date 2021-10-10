@@ -26,6 +26,7 @@
 			font-size: 18px;
 			font-weight: 500;
 			margin-top: 10px;
+			margin-right: 150px;
 		}
 
 		&-city {
@@ -86,6 +87,12 @@
 				height: 32px;
 				border-radius: 50%;
 				background: #C4C4C4;
+				overflow: hidden;
+
+				img {
+					width: 64px;
+    				height: 64px;
+				}
 			}
 		}
 	}
