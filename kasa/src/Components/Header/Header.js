@@ -1,7 +1,7 @@
 import headerLogo from "../../Assets/headerLogo.svg"
 import "./Header.scss"
 import React, { Component } from 'react'
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 // console.log(window.screen.width)
 

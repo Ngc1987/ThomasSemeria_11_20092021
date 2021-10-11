@@ -1,0 +1,31 @@
+.slide {
+	opacity: 0;
+}
+
+.active-anim {
+	opacity: 1;
+}
+
+.logement__gallery-leftArrow, .logement__gallery-rightArrow {
+	background: none;
+	border: none;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.logement__gallery-leftArrow {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.logement__gallery-rightArrow {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hidden {
+	display: none;
+}

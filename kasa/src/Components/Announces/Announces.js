@@ -44,14 +44,14 @@ export default class Announces extends Component {
 
 
 	render() {
-		const { error, isLoaded, appartments } = this.state;
+		const { appartments } = this.state;
 		// console.log(appartments[0])
 		return (
 			<div className="announces">
 
 				
 				{appartments.map((appartment) => 
-					<Link key={appartment.id}  to={"/logement?" + "id=" + appartment.id}>
+					<Link key={appartment.id}  to={`/logement?id=${appartment.id}`}>
 						<SampleLoc appartInfos={appartment}/>	
 					</Link>
 				)}

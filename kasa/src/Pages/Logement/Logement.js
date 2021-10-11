@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import ToggleDiv from '../../Components/ToggleDiv/ToggleDiv'
-import logementPic from "../../Assets/logement.jpg"
 import "./Logement.scss"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import starRed from "../../Assets/starRed.svg"
 import starGrey from "../../Assets/starGrey.svg"
+import Slider from "../../Components/Slider/Slider"
+import { v4 as uuid} from 'uuid'
 
 
 
@@ -43,7 +44,7 @@ export default class Logement extends Component {
 					isLoaded: true,
 					appartments: result
 				});
-				console.log(result)
+				// console.log(result)
 
 				let idLocation = window.location.search.substr(4);
 				let logement = this.state.appartments.filter((el) => el.id === idLocation)
@@ -92,20 +93,21 @@ export default class Logement extends Component {
 		  
 		  render() {
 
-			const {appartments, appartment, etoilesDiv } = this.state;
+			const {appartments, etoilesDiv } = this.state;
 			
-			console.log(this.state)
+			// console.log(this.state)
 
 
 		return (
 			<main className="logement">
 
 				{appartments.map((appart) => 
-					<div className="logement__" key={appart.id}>
+					<div className="logement__" key={"pre" + appart.id}>
 
-						<div className="logement__pic" >
-							<img src={appart.cover} alt="" />
-						</div>
+						{/* <div className="logement__pic" > */}
+							{/* <img src={appart.cover} alt="" /> */}
+							<Slider dataSlider={appart.pictures}/>
+						{/* </div> */}
 
 						<section className="logement__details">
 							<section className="logement__details-descript">
@@ -118,7 +120,7 @@ export default class Logement extends Component {
 
 							<section className="logement__details-tags">
 								{appart.tags.map((tag) => 
-									<div className="tag">
+									<div key={uuid()} className="tag">
 										<p>{tag}</p>
 									</div>
 								

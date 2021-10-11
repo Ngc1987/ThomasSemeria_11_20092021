@@ -49,7 +49,7 @@ export default class ToggleDiv extends Component {
 	render(props) {
 
 		
-		console.log(typeof this.props.content)
+		// console.log(typeof this.props.content)
 
 		return (
 
