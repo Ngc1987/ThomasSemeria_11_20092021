@@ -2,6 +2,7 @@
 
 .logement {
 	margin-top: 20px;
+	flex: 1;
 
 	&__gallery {
 		width: 100%;
@@ -93,8 +94,8 @@
 				overflow: hidden;
 
 				img {
-					width: 64px;
-    				height: 64px;
+					width: 32px;
+    				height: 32px;
 				}
 			}
 		}
@@ -159,6 +160,11 @@
 				.profilePic {
 					width: 64px;
 					height: 64px;
+
+					img {
+						width: 64px;
+						height: 64px;
+					}
 				}
 			}
 		}

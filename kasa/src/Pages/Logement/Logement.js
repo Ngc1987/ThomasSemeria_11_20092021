@@ -6,6 +6,7 @@ import starRed from "../../Assets/starRed.svg"
 import starGrey from "../../Assets/starGrey.svg"
 import Slider from "../../Components/Slider/Slider"
 import { v4 as uuid} from 'uuid'
+import Error404 from "../Error404/Error404"
 
 
 
@@ -44,14 +45,21 @@ export default class Logement extends Component {
 					isLoaded: true,
 					appartments: result
 				});
-				// console.log(result)
-
+				
 				let idLocation = window.location.search.substr(4);
 				let logement = this.state.appartments.filter((el) => el.id === idLocation)
+				console.log(logement)
 
-				this.setState({
-					appartments: logement
-				})
+				// if(logement.length > 0) {
+					this.setState({
+						appartments: logement
+					})
+
+				// } else {
+				// 	this.setState({
+				// 		appartments: []
+				// 	})
+				// }
 
 				let etoiles = 5
 				let etoilesArray = []
@@ -94,15 +102,32 @@ export default class Logement extends Component {
 		  render() {
 
 			const {appartments, etoilesDiv } = this.state;
-			
+			const tagss = () => {
+				return(
+					<section className="logement__details-tags">
+								{appartments.tags.map((tag) => 
+									<div key={tag} className="tag">
+										<p>{tag}</p>
+									</div>
+								
+								)}
+								
+
+							</section>
+				)
+			}
 			// console.log(this.state)
 
 
 		return (
+
+
+
+
 			<main className="logement">
 
 				{appartments.map((appart) => 
-					<div className="logement__" key={"pre" + appart.id}>
+					<div className="logement__" key={appart.id}>
 
 						{/* <div className="logement__pic" > */}
 							{/* <img src={appart.cover} alt="" /> */}
@@ -118,16 +143,16 @@ export default class Logement extends Component {
 								<p>{appart.location}</p>
 							</section>
 
-							<section className="logement__details-tags">
+							{/* <section className="logement__details-tags">
 								{appart.tags.map((tag) => 
-									<div key={uuid()} className="tag">
+									<div key={tag} className="tag">
 										<p>{tag}</p>
 									</div>
 								
 								)}
 								
 
-							</section>
+							</section> */}
 							<section className="logement__details__infos">
 								<section className="logement__details__infos-stars">
 									{etoilesDiv}

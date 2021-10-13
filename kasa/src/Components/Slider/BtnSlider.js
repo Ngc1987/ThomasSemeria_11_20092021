@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import leftArrow from "./icons/leftArrow.svg"
 import rightArrow from "./icons/rightArrow.svg"
+import leftSmallArrow from "./icons/leftSmallArrow.svg"
+import rightSmallArrow from "./icons/rightSmallArrow.svg"
 
 export default class BtnSlider extends Component {
 
 	render() {
 
-		const {moveSlide, direction, visibility} = this.props;
+		const {moveSlide, direction, visibility, size} = this.props;
 
 		return (
 
@@ -17,7 +19,11 @@ export default class BtnSlider extends Component {
 				: "hidden" }>
 
 				<img 
-					src={direction === "left" ? leftArrow : rightArrow} 
+					src={direction === "left" && size === "small" ? leftSmallArrow : 
+					direction === "right" && size === "small" ? rightSmallArrow : 
+					direction === "left" && size === "large" ? leftArrow :
+					rightArrow 
+					} 
 					alt="icone flèche" />
 			</button>
 		)

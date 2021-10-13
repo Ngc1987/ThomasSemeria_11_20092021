@@ -11,11 +11,23 @@ export default class Slider extends Component {
 			slideAnim: {
 				index: 1,
 				inProgress: false
-			}
+			}, 
+			width: 0,
+			height:0
 		}
 
 		// this.leftSlide = this.leftSlide.bind(this);
 	}
+	updateDimensions = () => {
+		this.setState({ width: window.innerWidth, height: window.innerHeight });
+		console.log(this.state.width, this.state.height)
+	  };
+	  componentDidMount() {
+		window.addEventListener('resize', this.updateDimensions);
+	  }
+	  componentWillUnmount() {
+		window.removeEventListener('resize', this.updateDimensions);
+	  }
 
 	leftSlide() {
 		if(this.state.slideAnim.index !== 1) {
@@ -63,18 +75,18 @@ export default class Slider extends Component {
 
 	render() {
 		return (
-			<div className="logement__gallery" >
+			<div className="logement__gallery">
 			{this.props.dataSlider.map((obj, index) => {
-				
+				console.log(obj, index)
 				return (
 					<div 
-					key={obj.index}
+					key={index}
 					className={this.state.slideAnim.index === index +1 ? "slide active-anim" : "slide"}
 					>
 					<img src={this.props.dataSlider[index]} className="logement__gallery-activePic" alt="" />
 
-						<BtnSlider visibility={this.props.dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.leftSlide.bind(this)} direction="left"/>
-						<BtnSlider visibility={this.props.dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.rightSlide.bind(this)} direction="right"/>
+						<BtnSlider size={window.innerWidth < 768 ? "small" : "large"} visibility={this.props.dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.leftSlide.bind(this)} direction="left"/>
+						<BtnSlider size={window.innerWidth < 768 ? "small" : "large"} visibility={this.props.dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.rightSlide.bind(this)} direction="right"/>
 					
 					</div>
 				)

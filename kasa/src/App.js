@@ -15,14 +15,19 @@ function App() {
         <Header />
           <Switch>
             <Route path="/" exact component={Home}/>
-            <Route path="/logement" component={Logement}/>
+            <Route path="/logement" exact component={Logement}/>
             <Route path="/apropos" exact component={APropos}/>
             <Route path="/" component={Error404}/>
 
           </Switch>
 
-        <Footer />
+        
       </Router>
+
+      <div className="footerDiv">
+          <Footer />
+
+        </div>
       {/* <APropos /> */}
       {/* <Home /> */}
       {/* <Logement /> */}

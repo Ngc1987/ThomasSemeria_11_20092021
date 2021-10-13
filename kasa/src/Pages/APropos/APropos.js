@@ -23,7 +23,7 @@ export default class APropos extends Component {
 				<AProposPagePic/>
 				<div className="aproposToggleDivs">
 					<ToggleDiv title="Fiabilité" content={fiabilityText} className="bigFont" />
-					<ToggleDiv title="Rescpect" content={respectText} className="bigFont" />
+					<ToggleDiv title="Respect" content={respectText} className="bigFont" />
 					<ToggleDiv title="Service" content={serviceText} className="bigFont" />
 					<ToggleDiv title="Responsabilité" content={securityText} className="bigFont" />
 				</div>
