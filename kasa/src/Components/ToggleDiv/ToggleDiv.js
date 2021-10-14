@@ -56,23 +56,23 @@ export default class ToggleDiv extends Component {
 			
 			<div className={`toggleDiv ${this.props.className}`}>
 				
-				<div className="toggleDiv__title"
+				<div tabIndex="0" className="toggleDiv__title"
 					onClick={() => this.openOrClosed()}
 					>
 
 					<p>{this.props.title}</p>
 					<img className="toggleDiv__arrow openArrow" src={arrowDown} alt="" />
-					
+
 				</div>
 
 				<div className={this.state.isOpened ? "toggleDiv__content open" : "toggleDiv__content closed"}>
 					
 					{typeof this.props.content === "object" ?
 						this.props.content.map((el, index) =>
-							 <p key={index}>{el}</p>
+							 <p tabIndex={this.state.isOpened ? "0" : ""} key={index}>{el}</p>
 						)
 						:
-						<p>{this.props.content}</p>
+						<p tabIndex={this.state.isOpened ? "0" : ""}>{this.props.content}</p>
 					}
 
 				</div>

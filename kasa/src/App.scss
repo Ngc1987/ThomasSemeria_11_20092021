@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
+@import "./Variables/Variables.scss";
 
 
 .App {
@@ -26,6 +26,10 @@
 	margin: 0;
 	box-sizing: border-box;
 	padding: 0;
+
+	:focus-visible {
+		border: 2px #FF6060;
+	}
 }
 
 // body {

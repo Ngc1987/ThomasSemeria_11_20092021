@@ -47,7 +47,7 @@ export default class Announces extends Component {
 		const { appartments } = this.state;
 		// console.log(appartments[0])
 		return (
-			// Boucle pour renvoyer un composant SampleLoc (vignette de présentation) pour chaque logement dans le composant Home
+			// Boucle pour renvoyer un composant SampleLoc (vignette de présentation) pour chaque logement dans le composant
 			<div className="announces">
 				{appartments.map((appartment) => 
 					<Link key={appartment.id}  to={`/logement?id=${appartment.id}`}>

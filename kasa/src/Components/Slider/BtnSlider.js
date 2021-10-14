@@ -16,8 +16,11 @@ export default class BtnSlider extends Component {
 				onClick={moveSlide} 
 				className={direction === "left" && visibility === "visible" ? "logement__gallery-leftArrow"  
 				: direction === "right" && visibility === "visible" ? "logement__gallery-rightArrow" 
-				: "hidden" }>
-
+				: "hidden" 
+				}
+				aria-label={direction === "left" ? "Image précédente" : "Image suivante"}
+				>
+			
 				<img 
 					src={direction === "left" && size === "small" ? leftSmallArrow : 
 					direction === "right" && size === "small" ? rightSmallArrow : 

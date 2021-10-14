@@ -6,11 +6,12 @@ export default class HomeBanner extends Component {
 	// Composant affichant la bannière en haut de page dans le composant Home
 	render() {
 		return (
-			<div className="header__pic">
+			<div tabIndex="0"  className="header__pic">
 				<div className="header__pic-overlay"></div>
-				<img className="picAnim" src={homeBanner} alt="" />
-				<p>Chez vous,</p>
-				<p>partout et ailleurs</p>
+				<img tabIndex="0" className="picAnim" src={homeBanner} alt="Paysage côtier" />
+				
+				<p tabIndex="0">Chez vous,</p>
+				<p tabIndex="0">partout et ailleurs</p>
 			</div>
 		)
 	}

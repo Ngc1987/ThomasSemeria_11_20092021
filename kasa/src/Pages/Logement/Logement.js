@@ -118,15 +118,15 @@ export default class Logement extends Component {
 						<section className="logement__details">
 							<section className="logement__details-descript">
 								{/* <p>{appart.location}</p> */}
-								<p>{appart.title}</p>
+								<p tabIndex="0">{appart.title}</p>
 							</section>
 							<section className="logement__details-city">
-								<p>{appart.location}</p>
+								<p tabIndex="0">{appart.location}</p>
 							</section>
 
 							<section className="logement__details-tags">
 								{appart.tags.map((tag) => 
-									<div key={tag} className="tag">
+									<div key={tag} className="tag" tabIndex="0">
 										<p>{tag}</p>
 									</div>
 								
@@ -135,17 +135,17 @@ export default class Logement extends Component {
 
 							</section>
 							<section className="logement__details__infos">
-								<section className="logement__details__infos-stars">
+								<section tabIndex="0" aria-label="Note du logement" className="logement__details__infos-stars">
 									{etoilesDiv}
 								</section>
 								<section className="logement__details__infos-name">
-									<div className="names">
+									<div tabIndex="0" className="names">
 										<p>{appart.host.name.split(" ")[0]}</p>
 										{/* <br /> */}
 										<p>{appart.host.name.split(" ")[1]}</p>
 
 									</div>
-									<div className="profilePic">
+									<div className="profilePic" tabIndex="0" aria-label={"Photo de profil de " + appart.host.name} >
 										<img src={appart.host.picture} alt="" />
 									</div>
 								</section>

@@ -7,7 +7,7 @@ export default class AProposBanner extends Component {
 	render() {
 		return (
 			<div className="picDiv">
-				<img className="picAnim" src={mountains} alt="" />
+				<img tabIndex="0" className="picAnim" src={mountains} alt="Montagnes" />
 			</div>
 		)
 	}

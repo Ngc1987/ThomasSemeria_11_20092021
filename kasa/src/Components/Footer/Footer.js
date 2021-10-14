@@ -7,8 +7,8 @@ export default class Footer extends Component {
 	render() {
 		return (
 			<footer>
-				<img src={footerLogo} alt="" />
-				<p>© 2020 Kasa. All rights reserved</p>
+				<img src={footerLogo} alt="Logo Kasa" tabIndex="0" />
+				<p tabIndex="0" >© 2020 Kasa. All rights reserved</p>
 			</footer>
 		)
 	}
