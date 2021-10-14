@@ -7,22 +7,23 @@ import { Link, NavLink } from "react-router-dom"
 
 export default class Header extends Component {
 
-	
-
 	render() {
+		// Composant Header à afficher dasn toutes les pages
 	  return (
 		<header className="header">
+
 			<Link to="/">
 				<img className="header__logo" src={headerLogo} alt="" />
 			</Link>
+
 			<div className="header__buttons">
 
-			<NavLink exact activeClassName="underlined" to="/">
-				<span>Accueil</span>
-			</NavLink>
-			<NavLink exact activeClassName="underlined" to="/apropos">
-				<span>A propos</span>
-			</NavLink>
+				<NavLink exact activeClassName="underlined" to="/">
+					<span>Accueil</span>
+				</NavLink>
+				<NavLink exact activeClassName="underlined" to="/apropos">
+					<span>A propos</span>
+				</NavLink>
 				
 			</div>
 		</header>

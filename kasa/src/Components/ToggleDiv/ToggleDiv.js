@@ -18,10 +18,9 @@ import arrowDown from "../../Assets/arrowDown.svg"
 
 export default class ToggleDiv extends Component {
 
-	
+	// Composant ToggleDiv présent dans plusieurs autres composants. Son state initial est fermé (isOpened = false) Il contient des informations cachées, au clic il se déroule et affiche les informations qui lui ont été passées en props selon le besoin
 	constructor(props) {
 		super(props);
-		// this.isOpened = false
 
     	this.state = {
 			isOpened: false
@@ -30,6 +29,7 @@ export default class ToggleDiv extends Component {
 		this.openOrClosed = this.openOrClosed.bind(this);
 	}
 
+	//Gestion du state au clic, ouvert ou fermé
 	openOrClosed() {
 		console.log(this.state.isOpened)
 
@@ -55,12 +55,16 @@ export default class ToggleDiv extends Component {
 
 			
 			<div className={`toggleDiv ${this.props.className}`}>
+				
 				<div className="toggleDiv__title"
 					onClick={() => this.openOrClosed()}
 					>
+
 					<p>{this.props.title}</p>
 					<img className="toggleDiv__arrow openArrow" src={arrowDown} alt="" />
+					
 				</div>
+
 				<div className={this.state.isOpened ? "toggleDiv__content open" : "toggleDiv__content closed"}>
 					
 					{typeof this.props.content === "object" ?

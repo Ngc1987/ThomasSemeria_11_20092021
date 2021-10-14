@@ -16,11 +16,11 @@ export default class Announces extends Component {
 
 		this.componentDidMount = this.componentDidMount.bind(this);
 	}
-	
-	  componentDidMount() {
+	// Récupération des datas afin d'afficher une vignette pour chaque logement sur la page d'accueil
+	componentDidMount() {
 		fetch("http://localhost:3000/data/logements.json")
-		  .then(res => res.json())
-		  .then(
+		  	.then(res => res.json())
+		  	.then(
 			(result) => {
 			  this.setState({
 				isLoaded: true,
@@ -47,18 +47,13 @@ export default class Announces extends Component {
 		const { appartments } = this.state;
 		// console.log(appartments[0])
 		return (
+			// Boucle pour renvoyer un composant SampleLoc (vignette de présentation) pour chaque logement dans le composant Home
 			<div className="announces">
-
-				
 				{appartments.map((appartment) => 
 					<Link key={appartment.id}  to={`/logement?id=${appartment.id}`}>
 						<SampleLoc appartInfos={appartment}/>	
 					</Link>
 				)}
-
-
-
-
 			</div>
 		)
 	}

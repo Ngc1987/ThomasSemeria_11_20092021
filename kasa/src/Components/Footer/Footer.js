@@ -3,6 +3,7 @@ import "./Footer.scss"
 import footerLogo from "../../Assets/footerLogo.svg"
 
 export default class Footer extends Component {
+	// Composant Footer à afficher dasn toutes les pages
 	render() {
 		return (
 			<footer>
