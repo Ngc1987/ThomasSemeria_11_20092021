@@ -29,7 +29,7 @@
 	&__content {
 		padding: 15px 15px;
 		color: $primary;
-		transition: all 0.3s ease;
+		transition: all 0.5s ease;
 		// font-size: 12px;
 		font-weight: 400;
 		line-height: 1.5;
@@ -38,6 +38,7 @@
 
 	.open {
 		max-height: fit-content;
+		// transform: translateX(0);
 	}
 
 	.closed {
@@ -47,6 +48,7 @@
 		padding: 0;
 		margin: 0;
 		background: #fff;
+		// transform: translateX(-50px);
 	}
 }
 

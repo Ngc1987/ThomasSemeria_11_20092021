@@ -81,26 +81,29 @@ export default class Slider extends Component {
 	render() {
 
 		console.log(this.props.dataSlider)
+
+		const {dataSlider} = this.props
+		const {slideAnim} = this.state
+		
 		return (
 
 			<div className="logement__gallery">
-				{this.props.dataSlider.map((obj, index) => {
-					console.log(obj, index)
+				{dataSlider.map((obj, index) => {
 					
 					return (
 
 						<div 
 						key={index}
-						className={this.state.slideAnim.index === index +1 ? "slide active-anim" : "slide"}
+						className={slideAnim.index === index +1 ? "slide active-anim" : "slide"}
 						>
-							<img src={this.props.dataSlider[index]} className="logement__gallery-activePic" alt="" />
+							<img src={dataSlider[index]} className="logement__gallery-activePic" alt="" />
 						
 						</div>
 					)
 				})}
 
-						<BtnSlider size={window.innerWidth < 768 ? "small" : "large"} visibility={this.props.dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.leftSlide.bind(this)} direction="left"/>
-						<BtnSlider size={window.innerWidth < 768 ? "small" : "large"} visibility={this.props.dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.rightSlide.bind(this)} direction="right"/>
+						<BtnSlider size={window.innerWidth < 768 ? "small" : "large"} visibility={dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.leftSlide.bind(this)} direction="left"/>
+						<BtnSlider size={window.innerWidth < 768 ? "small" : "large"} visibility={dataSlider.length > 1 ? "visible" : "hidden"} moveSlide={this.rightSlide.bind(this)} direction="right"/>
 
 			</div>
 		)
