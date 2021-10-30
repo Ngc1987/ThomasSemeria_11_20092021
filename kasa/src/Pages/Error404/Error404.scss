@@ -8,6 +8,7 @@
 	align-items: center;
 	min-height: 500px;
 	color: $primary;
+	flex: 1 1;
 
 	&__number {
 		font-size: 96px;
@@ -27,8 +28,8 @@
 		font-weight: 500;
 		text-decoration: underline;
 		margin-top: 120px;
-		// position: absolute;
-		// bottom: 100px;
+		text-align: center;
+		color: $primary;
 	}
 }
 
@@ -41,8 +42,6 @@
 
 		&__phrase {
 			font-size: 36px;
-			// flex-direction: row;
-			// flex-wrap: wrap;
 
 			p {
 				margin-left: 10px;
@@ -57,9 +56,10 @@
 }
 
 @media screen and(min-width: 942px) {
+
 	.error404 {
+		
 		&__phrase {
-			// font-size: 36px;
 			flex-direction: row;
 			flex-wrap: wrap;
 

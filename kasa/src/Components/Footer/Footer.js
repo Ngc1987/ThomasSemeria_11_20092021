@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./Footer.scss"
-import footerLogo from "../../Assets/footerLogo.svg"
+import footerLogo from "./footerLogo.svg"
 
 export default class Footer extends Component {
 	// Composant Footer à afficher dasn toutes les pages

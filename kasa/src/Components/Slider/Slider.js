@@ -93,10 +93,10 @@ export default class Slider extends Component {
 					return (
 
 						<div 
-						key={index}
-						className={slideAnim.index === index +1 ? "slide active-anim" : "slide"}
+							key={index}
+							className={slideAnim.index === index +1 ? "slide active-anim" : "slide"}
 						>
-							<img src={dataSlider[index]} className="logement__gallery-activePic" alt="" />
+								<img src={dataSlider[index]} className="logement__gallery-activePic" alt="" />
 						
 						</div>
 					)

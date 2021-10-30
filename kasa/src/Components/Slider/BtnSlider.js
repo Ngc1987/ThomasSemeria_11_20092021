@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import leftArrow from "./icons/leftArrow.svg"
-import rightArrow from "./icons/rightArrow.svg"
-import leftSmallArrow from "./icons/leftSmallArrow.svg"
-import rightSmallArrow from "./icons/rightSmallArrow.svg"
+// import leftArrow from "./leftArrow.svg"
+// import rightArrow from "./rightArrow.svg"
+// import leftSmallArrow from "./leftSmallArrow.svg"
+// import rightSmallArrow from "./rightSmallArrow.svg"
 
 export default class BtnSlider extends Component {
 
@@ -22,10 +22,10 @@ export default class BtnSlider extends Component {
 				>
 			
 				<img 
-					src={direction === "left" && size === "small" ? leftSmallArrow : 
-					direction === "right" && size === "small" ? rightSmallArrow : 
-					direction === "left" && size === "large" ? leftArrow :
-					rightArrow 
+					src={direction === "left" && size === "small" ? process.env.PUBLIC_URL + "/Assets/leftSmallArrow.svg" : 
+					direction === "right" && size === "small" ? process.env.PUBLIC_URL + "/Assets/rightSmallArrow.svg" : 
+					direction === "left" && size === "large" ? process.env.PUBLIC_URL + "/Assets/leftArrow.svg" :
+					process.env.PUBLIC_URL + "/Assets/rightArrow.svg" 
 					} 
 					alt="icone flèche" />
 			</button>

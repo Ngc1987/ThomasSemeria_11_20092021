@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import SampleLoc from '../SampleLoc/SampleLoc'
 import "./Announces.scss"
 import { Link } from 'react-router-dom'
+import Error404 from "../../Pages/Error404/Error404"
 
 export default class Announces extends Component {
-
 
 	constructor(props) {
 		super(props);
@@ -16,25 +16,26 @@ export default class Announces extends Component {
 
 		this.componentDidMount = this.componentDidMount.bind(this);
 	}
+
+	
 	// Récupération des datas afin d'afficher une vignette pour chaque logement sur la page d'accueil
 	componentDidMount() {
-		fetch("http://localhost:3000/data/logements.json")
+		fetch(process.env.PUBLIC_URL + "/data/logements.json")
 		  	.then(res => res.json())
 		  	.then(
 			(result) => {
+				console.log(result)
 			  this.setState({
 				isLoaded: true,
 				appartments: result
 			  });
 			//   console.log(result)
 			},
-			// Remarque : il est important de traiter les erreurs ici
-			// au lieu d'utiliser un bloc catch(), pour ne pas passer à la trappe
-			// des exceptions provenant de réels bugs du composant.
+			// SI erreur nous allons afficher la page d'erreur avec une props, afin de changer le contenu à afficher à l'utilisateur si nous ne parvenons pas à récupérer les données
 			(error) => {
 			  this.setState({
 				isLoaded: true,
-				error
+				error: true
 			  });
 			//   console.log(error)
 			}
@@ -44,8 +45,11 @@ export default class Announces extends Component {
 
 
 	render() {
+		console.log(window.location.origin + "/data/logements.json")
 		const { appartments } = this.state;
-		// console.log(appartments[0])
+
+		if(this.state.error) {return (<Error404 type="fetchError" />)}
+		
 		return (
 			// Boucle pour renvoyer un composant SampleLoc (vignette de présentation) pour chaque logement dans le composant
 			<div className="announces">

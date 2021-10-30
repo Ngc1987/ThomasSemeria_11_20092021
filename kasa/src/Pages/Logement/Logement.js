@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import ToggleDiv from '../../Components/ToggleDiv/ToggleDiv'
 import "./Logement.scss"
-import starRed from "../../Assets/starRed.svg"
-import starGrey from "../../Assets/starGrey.svg"
+import starRed from  "./starRed.svg"
+import starGrey from "./starGrey.svg"
 import Slider from "../../Components/Slider/Slider"
-// import Error404 from "../Error404/Error404"
+import Error404 from "../Error404/Error404"
 
 export default class Logement extends Component {
 
-
 	constructor(props) {
-
 		// Gestion du state (idLocation = id du logement récupéré dans l'url, appartments = objet contenant les datas du logement, etoilesDiv = tableau récupérant les étoiles de notation du logement
 		super(props);
 		this.state = {
@@ -22,23 +20,29 @@ export default class Logement extends Component {
 		};
 
 		this.componentDidMount = this.componentDidMount.bind(this);
-
 	}
 
 	// Récupération des données
 	componentDidMount() {
 
-		fetch("http://localhost:3000/data/logements.json")
-			.then(res => res.json())
+		fetch(process.env.PUBLIC_URL + "/data/logements.json")
+			.then(res => {
+				console.log(res)
+				return res.json()
+			} )
 			.then(
 				(result) => {
 					// Récupération de l'id du logement
 					let idLocation = window.location.search.substr(4);
 					// Récupération du logement dans les datas grâce à l'id du logement récupéré dans l'url
 					let logement = result.filter((el) => el.id === idLocation)[0]
-					// console.log(logement)
-
-
+					console.log(logement)
+					if(logement === undefined) {
+						this.setState({
+							error: true
+						})
+						return
+					}
 					// Boucle pour afficher 5 étoiles, et selon la note afficher étoiles rouges ou grises
 					let etoiles = 5
 					let etoilesArray = []
@@ -59,13 +63,12 @@ export default class Logement extends Component {
 						etoilesDiv: etoilesArray
 					})
 				},
-				// Remarque : il est important de traiter les erreurs ici
-				// au lieu d'utiliser un bloc catch(), pour ne pas passer à la trappe
-				// des exceptions provenant de réels bugs du composant.
+				// Si erreur à la récupération des données, nous allons afficher le composant erreur avec des props nous 
+				// permettant ensuite d'afficher à l'utilisateur un problème dans la récupération des données
 				(error) => {
 					this.setState({
 						isLoaded: true,
-						error
+						error: true
 					});
 					console.log(error)
 				}
@@ -76,9 +79,9 @@ export default class Logement extends Component {
 
 		const { appartment, etoilesDiv } = this.state;
 		console.log(this.state.appartment)
-
-		if (appartment === null) return null;
-		// if(error) return <Error404 />
+		// Affichage d'une page d'erreur si les données ne sont pas récupérées (changement de l'id du logement dans la barre d'adresse par exemple)
+		if (appartment === null) {return (<Error404 type="fetchError" />)}
+		if(this.state.error) {return (<Error404 type="fetchError" />)}
 
 		return (
 

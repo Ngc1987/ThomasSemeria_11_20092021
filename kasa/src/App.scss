@@ -3,24 +3,17 @@
 
 
 .App {
-  // text-align: center;
   	margin: 0 auto;
 	margin-top: 20px;
-	// max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
 	min-height: 100vh;
-	// position: relative;
   	font-family: Montserrat;
-	  display: flex;
-	  flex-direction: column;
+	display: flex;
+	flex-direction: column;
   
   
 }
-// body {
-// 	position: relative;
-// 	height: 100vh;
-// }
 
 *, ::after, ::before {
 	margin: 0;
@@ -31,11 +24,3 @@
 		border: 2px #FF6060;
 	}
 }
-
-// body {
-// 	margin: 0 auto;
-// 	margin-top: 20px;
-// 	// max-width: 1240px;
-// 	padding-left: 20px;
-// 	padding-right: 20px;
-// }

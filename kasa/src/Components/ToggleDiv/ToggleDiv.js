@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./ToggleDiv.scss"
-import arrowDown from "../../Assets/arrowDown.svg"
+import arrowDown from "./arrowDown.svg"
 
 
 // const divTitle = document.querySelector(".toggleDiv__title")
@@ -18,7 +18,8 @@ import arrowDown from "../../Assets/arrowDown.svg"
 
 export default class ToggleDiv extends Component {
 
-	// Composant ToggleDiv présent dans plusieurs autres composants. Son state initial est fermé (isOpened = false) Il contient des informations cachées, au clic il se déroule et affiche les informations qui lui ont été passées en props selon le besoin
+	// Composant ToggleDiv présent dans plusieurs autres composants. Son state initial est fermé (isOpened = false) Il contient des informations 
+	// cachées, au clic il se déroule et affiche les informations qui lui ont été passées en props selon le besoin
 	constructor(props) {
 		super(props);
 
@@ -38,21 +39,16 @@ export default class ToggleDiv extends Component {
 				isOpened: false
 			})
 		}
-		if(this.state.isOpened === false) {
+		if(!this.state.isOpened) {
 			this.setState({
 				isOpened: true
 			})
 		}
-		// this.state.isOpened = !this.state.isOpened
 	}
 
 	render(props) {
 
-		
-		// console.log(typeof this.props.content)
-
 		return (
-
 			
 			<div className={`toggleDiv ${this.props.className}`}>
 				

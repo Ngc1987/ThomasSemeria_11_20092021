@@ -1,4 +1,4 @@
-import headerLogo from "../../Assets/headerLogo.svg"
+import headerLogo from "./headerLogo.svg"
 import "./Header.scss"
 import React, { Component } from 'react'
 import { Link, NavLink } from "react-router-dom"
@@ -12,13 +12,13 @@ export default class Header extends Component {
 	  return (
 		<header className="header">
 
-			<Link to="/">
+			<Link to="/ThomasSemeria_11_20092021">
 				<img className="header__logo" src={headerLogo} alt="Logo Kasa Lien vers la page d'accueil" />		
 			</Link>
 
 			<div className="header__buttons">
 
-				<NavLink exact activeClassName="underlined" to="/">
+				<NavLink exact activeClassName="underlined" to="/ThomasSemeria_11_20092021">
 					<span>Accueil</span>
 				</NavLink>
 				<NavLink exact activeClassName="underlined" to="/apropos">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./HomeBanner.scss"
-import homeBanner from './homeBanner.jpg'; // with import
+import homeBanner from './homeBanner.jpg'; 
 
 export default class HomeBanner extends Component {
 	// Composant affichant la bannière en haut de page dans le composant Home
