@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/ThomasSemeria_11_20092021/static/css/main.7986651c.chunk.css",
-    "main.js": "/ThomasSemeria_11_20092021/static/js/main.da67079d.chunk.js",
-    "main.js.map": "/ThomasSemeria_11_20092021/static/js/main.da67079d.chunk.js.map",
-    "runtime-main.js": "/ThomasSemeria_11_20092021/static/js/runtime-main.85b7e115.js",
-    "runtime-main.js.map": "/ThomasSemeria_11_20092021/static/js/runtime-main.85b7e115.js.map",
-    "static/js/2.7ca5e374.chunk.js": "/ThomasSemeria_11_20092021/static/js/2.7ca5e374.chunk.js",
-    "static/js/2.7ca5e374.chunk.js.map": "/ThomasSemeria_11_20092021/static/js/2.7ca5e374.chunk.js.map",
-    "index.html": "/ThomasSemeria_11_20092021/index.html",
-    "static/css/main.7986651c.chunk.css.map": "/ThomasSemeria_11_20092021/static/css/main.7986651c.chunk.css.map",
-    "static/js/2.7ca5e374.chunk.js.LICENSE.txt": "/ThomasSemeria_11_20092021/static/js/2.7ca5e374.chunk.js.LICENSE.txt",
-    "static/media/arrowDown.6be86a8f.svg": "/ThomasSemeria_11_20092021/static/media/arrowDown.6be86a8f.svg",
-    "static/media/footerLogo.7ee6f1c0.svg": "/ThomasSemeria_11_20092021/static/media/footerLogo.7ee6f1c0.svg",
-    "static/media/headerLogo.3e4c432d.svg": "/ThomasSemeria_11_20092021/static/media/headerLogo.3e4c432d.svg",
-    "static/media/homeBanner.053687a5.jpg": "/ThomasSemeria_11_20092021/static/media/homeBanner.053687a5.jpg",
-    "static/media/mountains.3827f97b.jpg": "/ThomasSemeria_11_20092021/static/media/mountains.3827f97b.jpg",
-    "static/media/starGrey.27754a3e.svg": "/ThomasSemeria_11_20092021/static/media/starGrey.27754a3e.svg",
-    "static/media/starRed.4b5ba26a.svg": "/ThomasSemeria_11_20092021/static/media/starRed.4b5ba26a.svg"
+    "main.css": "/kasa%20%20/static/css/main.72a2681a.chunk.css",
+    "main.js": "/kasa%20%20/static/js/main.d51a6902.chunk.js",
+    "main.js.map": "/kasa%20%20/static/js/main.d51a6902.chunk.js.map",
+    "runtime-main.js": "/kasa%20%20/static/js/runtime-main.e002cddb.js",
+    "runtime-main.js.map": "/kasa%20%20/static/js/runtime-main.e002cddb.js.map",
+    "static/js/2.d4460727.chunk.js": "/kasa%20%20/static/js/2.d4460727.chunk.js",
+    "static/js/2.d4460727.chunk.js.map": "/kasa%20%20/static/js/2.d4460727.chunk.js.map",
+    "index.html": "/kasa%20%20/index.html",
+    "static/css/main.72a2681a.chunk.css.map": "/kasa%20%20/static/css/main.72a2681a.chunk.css.map",
+    "static/js/2.d4460727.chunk.js.LICENSE.txt": "/kasa%20%20/static/js/2.d4460727.chunk.js.LICENSE.txt",
+    "static/media/arrowDown.6be86a8f.svg": "/kasa%20%20/static/media/arrowDown.6be86a8f.svg",
+    "static/media/footerLogo.7ee6f1c0.svg": "/kasa%20%20/static/media/footerLogo.7ee6f1c0.svg",
+    "static/media/headerLogo.3e4c432d.svg": "/kasa%20%20/static/media/headerLogo.3e4c432d.svg",
+    "static/media/homeBanner.053687a5.jpg": "/kasa%20%20/static/media/homeBanner.053687a5.jpg",
+    "static/media/mountains.3827f97b.jpg": "/kasa%20%20/static/media/mountains.3827f97b.jpg",
+    "static/media/starGrey.27754a3e.svg": "/kasa%20%20/static/media/starGrey.27754a3e.svg",
+    "static/media/starRed.4b5ba26a.svg": "/kasa%20%20/static/media/starRed.4b5ba26a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.85b7e115.js",
-    "static/js/2.7ca5e374.chunk.js",
-    "static/css/main.7986651c.chunk.css",
-    "static/js/main.da67079d.chunk.js"
+    "static/js/runtime-main.e002cddb.js",
+    "static/js/2.d4460727.chunk.js",
+    "static/css/main.72a2681a.chunk.css",
+    "static/js/main.d51a6902.chunk.js"
   ]
 }
