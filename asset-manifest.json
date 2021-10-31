@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ThomasSemeria_11_20092021/static/css/main.7986651c.chunk.css",
-    "main.js": "/ThomasSemeria_11_20092021/static/js/main.355132a4.chunk.js",
-    "main.js.map": "/ThomasSemeria_11_20092021/static/js/main.355132a4.chunk.js.map",
+    "main.js": "/ThomasSemeria_11_20092021/static/js/main.da67079d.chunk.js",
+    "main.js.map": "/ThomasSemeria_11_20092021/static/js/main.da67079d.chunk.js.map",
     "runtime-main.js": "/ThomasSemeria_11_20092021/static/js/runtime-main.85b7e115.js",
     "runtime-main.js.map": "/ThomasSemeria_11_20092021/static/js/runtime-main.85b7e115.js.map",
     "static/js/2.7ca5e374.chunk.js": "/ThomasSemeria_11_20092021/static/js/2.7ca5e374.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.85b7e115.js",
     "static/js/2.7ca5e374.chunk.js",
     "static/css/main.7986651c.chunk.css",
-    "static/js/main.355132a4.chunk.js"
+    "static/js/main.da67079d.chunk.js"
   ]
 }
