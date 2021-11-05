@@ -5,6 +5,7 @@ import starRed from  "./starRed.svg"
 import starGrey from "./starGrey.svg"
 import Slider from "../../Components/Slider/Slider"
 import Error404 from "../Error404/Error404"
+import Loader from '../Loader/Loader'
 
 export default class Logement extends Component {
 
@@ -75,9 +76,24 @@ export default class Logement extends Component {
 			)
 	}
 
+	
+	
+
 	render() {
 
-		const { appartment, etoilesDiv } = this.state;
+		const { appartment, etoilesDiv, isLoaded, error } = this.state;
+
+		if(error) {
+			return(
+				<Error404 type="fetchError" />
+			)
+		}
+		if(!isLoaded) {
+			return(
+				<Loader />
+			)
+		}
+
 		console.log(this.state.appartment)
 		// Affichage d'une page d'erreur si les données ne sont pas récupérées (changement de l'id du logement dans la barre d'adresse par exemple)
 		if (appartment === null) {return (<Error404 type="fetchError" />)}

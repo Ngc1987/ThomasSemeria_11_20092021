@@ -23,6 +23,7 @@ export default class Slider extends Component {
 		this.setState({ width: window.innerWidth, height: window.innerHeight });
 		// console.log(this.state.width, this.state.height)
 	};
+	
 	componentDidMount() {
 		window.addEventListener('resize', this.updateDimensions);
 	}

@@ -1,6 +1,6 @@
 {
   "name": "kasa",
-  "homepage": "https://admiring-snyder-ecfdb7.netlify.app/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

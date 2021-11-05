@@ -3,6 +3,7 @@ import SampleLoc from '../SampleLoc/SampleLoc'
 import "./Announces.scss"
 import { Link } from 'react-router-dom'
 import Error404 from "../../Pages/Error404/Error404"
+import Loader from '../../Pages/Loader/Loader'
 
 export default class Announces extends Component {
 
@@ -45,10 +46,15 @@ export default class Announces extends Component {
 
 
 	render() {
-		console.log(window.location.origin + "/data/logements.json")
-		const { appartments } = this.state;
+		// console.log(window.location.origin + "/data/logements.json")
+		const { appartments, isLoaded, error } = this.state;
 
-		if(this.state.error) {return (<Error404 type="fetchError" />)}
+		if(error) {return (<Error404 type="fetchError" />)}
+		if(!isLoaded) {
+			return(
+				<Loader />
+			)
+		}
 		
 		return (
 			// Boucle pour renvoyer un composant SampleLoc (vignette de présentation) pour chaque logement dans le composant
