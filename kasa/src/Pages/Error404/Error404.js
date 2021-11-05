@@ -27,7 +27,7 @@ export default class Error404 extends Component {
 					</div>
 				</>
 			}
-			<Link to="/ThomasSemeria_11_20092021" >
+			<Link to="/" >
 				<p  className="error404__homeLink">Retourner sur la page d'accueil</p>
 				</Link>
 			</section>

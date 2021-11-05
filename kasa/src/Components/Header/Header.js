@@ -12,13 +12,13 @@ export default class Header extends Component {
 	  return (
 		<header className="header">
 
-			<Link to="/ThomasSemeria_11_20092021">
+			<Link to="/">
 				<img className="header__logo" src={headerLogo} alt="Logo Kasa Lien vers la page d'accueil" />		
 			</Link>
 
 			<div className="header__buttons">
 
-				<NavLink exact activeClassName="underlined" to="/ThomasSemeria_11_20092021">
+				<NavLink exact activeClassName="underlined" to="/">
 					<span>Accueil</span>
 				</NavLink>
 				<NavLink exact activeClassName="underlined" to="/apropos">
