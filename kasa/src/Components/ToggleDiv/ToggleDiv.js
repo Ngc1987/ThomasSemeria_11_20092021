@@ -3,18 +3,6 @@ import "./ToggleDiv.scss"
 import arrowDown from "./arrowDown.svg"
 
 
-// const divTitle = document.querySelector(".toggleDiv__title")
-// const divContent = document.querySelector(".toggleDiv__content")
-
-// divTitle.addEventListener("click", openOrClosed)
-
-// let isOpened = false
-// function openOrClosed() {
-// 	console.log(isOpened)
-// 	isOpened = !isOpened
-// }
-
-// openOrClosed()
 
 export default class ToggleDiv extends Component {
 
