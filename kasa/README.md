@@ -1,7 +1,31 @@
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ngc1987) [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/) [![GitHub](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/) [![GitHub](https://img.shields.io/badge/JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![GitHub](https://img.shields.io/badge/JSX-4F4FD4?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/docs/introducing-jsx.html) [![GitHub](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/) [![GitHub](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+<p align="center">
+	<a href="https://github.com/Ngc1987" >
+		<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+	</a>
+	<a href="https://reactjs.org/">
+		<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+	</a>
+	<a href="https://reactrouter.com/">
+		<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"/>
+	</a>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+		<img src="https://img.shields.io/badge/JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+	</a>
+	<a href="https://reactjs.org/docs/introducing-jsx.html">
+		<img src="https://img.shields.io/badge/JSX-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+		</a>
+	<a href="https://sass-lang.com/">
+		<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+		</a>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+		<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+	</a>
+</p>
 
 
-# Kasa : The leader in apartments rentals in France
+<h1 align="center">Kasa : The leader in apartments rentals in France</h1>
+
 
 <p align="center">
 The Kasa app help you to find the best apartment for your holidays or business travels, for one or many nights
