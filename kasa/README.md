@@ -34,6 +34,11 @@ The Kasa app help you to find the best apartment for your holidays or business t
 ![Imgur](https://i.imgur.com/IDaC9rb.png)
 ![Imgur](https://i.imgur.com/G8fIvgH.png)
 
+
+<a href="https://kasarent.netlify.app/">
+	<h2 align="center">🌍 Live démo</h2>
+</a>
+
 ## 1. Author
 
 Thomas Semeria
