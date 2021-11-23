@@ -1,3 +1,65 @@
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ngc1987) [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/) [![GitHub](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/) [![GitHub](https://img.shields.io/badge/JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![GitHub](https://img.shields.io/badge/JSX-4F4FD4?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/docs/introducing-jsx.html) [![GitHub](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/) [![GitHub](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+
+# Kasa : The leader in apartments rentals in France
+
+<p align="center">
+The Kasa app help you to find the best apartment for your holidays or business travels, for one or many nights
+</p>
+
+![Imgur](https://i.imgur.com/IDaC9rb.png)
+![Imgur](https://i.imgur.com/G8fIvgH.png)
+
+## 1. Author
+
+Thomas Semeria
+
+
+## 2. Languages
+
+- JS
+- JSX
+- SCSS
+
+## 3. Project
+This project is the 12th project for the React front-end developer [formation](https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react#main_content) of OpenClassRooms.
+We have to build an App who show on a dashboard differents informations of the user on some charts.
+For this project i use:
+
+- [React](https://reactjs.org/)
+- [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
+- [Sass](https://sass-lang.com/)
+
+### 3.1 Prerequisites
+
+- [NodeJS (**version 12.18**)](https://nodejs.org/en/)
+
+If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). This tool will allow you to easily manage your NodeJS versions.
+
+
+### 3.2 Launching the project
+
+- Fork this repository
+- Clone it on your computer.
+- Open the terminal and write `cd kasa`
+- Then write on the terminal `npm install` to install all the dependencies
+- You can now do an `npm start` and the App is now hosted on http://localhost:3000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
