@@ -27,7 +27,7 @@ export default class Announces extends Component {
 			(result) => {
 				console.log(result)
 			  this.setState({
-				isLoaded: true,
+				isLoaded: true,	
 				appartments: result
 			  });
 			//   console.log(result)
@@ -35,7 +35,7 @@ export default class Announces extends Component {
 			// SI erreur nous allons afficher la page d'erreur avec une props, afin de changer le contenu à afficher à l'utilisateur si nous ne parvenons pas à récupérer les données
 			(error) => {
 			  this.setState({
-				isLoaded: true,
+				isLoaded: true,	
 				error: true
 			  });
 			//   console.log(error)

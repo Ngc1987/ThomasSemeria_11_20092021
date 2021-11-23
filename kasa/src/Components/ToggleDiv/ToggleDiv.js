@@ -16,11 +16,11 @@ export default class ToggleDiv extends Component {
 		};
 
 		this.openOrClosed = this.openOrClosed.bind(this);
+		this.handleKeyPress = this.handleKeyPress.bind(this);
 	}
 
 	//Gestion du state au clic, ouvert ou fermé
 	openOrClosed() {
-		console.log(this.state.isOpened)
 
 		if(this.state.isOpened) {
 			this.setState({
@@ -34,6 +34,13 @@ export default class ToggleDiv extends Component {
 		}
 	}
 
+	handleKeyPress = (e) => {
+		// console.log(e.keyCode)
+		if(e.keyCode === 13){
+		  this.openOrClosed()
+		}
+	}
+
 	render(props) {
 
 		return (
@@ -42,6 +49,7 @@ export default class ToggleDiv extends Component {
 				
 				<div tabIndex="0" className="toggleDiv__title"
 					onClick={() => this.openOrClosed()}
+					onKeyDown={this.handleKeyPress}
 					>
 
 					<p>{this.props.title}</p>

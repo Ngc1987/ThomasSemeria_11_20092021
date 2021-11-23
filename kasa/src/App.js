@@ -7,6 +7,8 @@ import Error404 from './Pages/Error404/Error404';
 import APropos from './Pages/APropos/APropos';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 
+
+// Here is the router logic of the app
 function App() {
   return (
 
@@ -18,13 +20,13 @@ function App() {
                 <Route path="/" exact component={Home}/>
                 <Route path="/logement*" component={Logement}/>
                 <Route path="/apropos" exact component={APropos}/>
-                <Route path="/*" component={Error404}/>
+                <Route path="*" component={Error404}/>
             </Switch>
+            <div className="footerDiv">
+                <Footer />
+            </div>
         </Router>
 
-        <div className="footerDiv">
-            <Footer />
-        </div>
 
     </div>
   );

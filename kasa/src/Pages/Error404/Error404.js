@@ -29,7 +29,7 @@ export default class Error404 extends Component {
 			}
 			<Link to="/" >
 				<p  className="error404__homeLink">Retourner sur la page d'accueil</p>
-				</Link>
+			</Link>
 			</section>
 		)
 	}
