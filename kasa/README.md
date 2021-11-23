@@ -22,8 +22,10 @@ Thomas Semeria
 - SCSS
 
 ## 3. Project
-This project is the 12th project for the React front-end developer [formation](https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react#main_content) of OpenClassRooms.
-We have to build an App who show on a dashboard differents informations of the user on some charts.
+This project is the 11th project for the React front-end developer [formation](https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react#main_content) of OpenClassRooms.
+We have to build an App who display some apartments for the user, who can choose one to rent for holidays, business travels... There is one home page who displays all apartments, one page for each apartment, one page "à propos" who tells some informations of the enterprise, and one error page who is displayed when the url is incorrect.
+It's the first project of the formation where we use React, with `create-react-app`. I make my first components based on classes, it was one of the instructions of the project.
+
 For this project i use:
 
 - [React](https://reactjs.org/)
