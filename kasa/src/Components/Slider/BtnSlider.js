@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 
 export default class BtnSlider extends Component {
 
-	render() {
+	render(props) {
 
 		const {moveSlide, direction, visibility, size} = this.props;
 

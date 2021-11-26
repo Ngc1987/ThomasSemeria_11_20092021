@@ -9,7 +9,7 @@ export default class SampleLoc extends Component {
 		return (
 			<div className="sampleLoc">
 				<p>{this.props.appartInfos.title}</p>
-				<img src={this.props.appartInfos.cover} alt="" />
+				<img src={this.props.appartInfos.cover} alt="Aperçu de l'appartement" />
 			</div>
 		)
 	}

@@ -52,7 +52,7 @@ export default class Slider extends Component {
 				}
 			})
 		}
-		console.log(this.state.slideAnim.index, this.props.dataSlider.length, this.props.dataSlider)
+		// console.log(this.state.slideAnim.index, this.props.dataSlider.length, this.props.dataSlider)
 	}
 	// Fonction permettant de changer la source de l'image au clic sur la flèche droite, l'index dans le state représente l'image à afficher
 	// Cette image obtient la classe "slide activeAnim" et son opacité est à 1, les autres obtiennent la classe "slide", et leur opacité est à 0
@@ -76,12 +76,12 @@ export default class Slider extends Component {
 			})
 		}
 
-		console.log(this.state.slideAnim.index, this.props.dataSlider.length)
+		// console.log(this.state.slideAnim.index, this.props.dataSlider.length)
 	}
 
 	render() {
 
-		console.log(this.props.dataSlider)
+		// console.log(this.props.dataSlider)
 
 		const {dataSlider} = this.props
 		const {slideAnim} = this.state
@@ -97,7 +97,7 @@ export default class Slider extends Component {
 							key={index}
 							className={slideAnim.index === index +1 ? "slide active-anim" : "slide"}
 						>
-								<img src={dataSlider[index]} className="logement__gallery-activePic" alt="" />
+								<img src={dataSlider[index]} className="logement__gallery-activePic" alt="Gallery pic" />
 						
 						</div>
 					)

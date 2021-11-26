@@ -7,8 +7,8 @@ import Loader from '../../Pages/Loader/Loader'
 
 export default class Announces extends Component {
 
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		this.state = {
 		  error: null,
 		  isLoaded: false,
@@ -25,7 +25,7 @@ export default class Announces extends Component {
 		  	.then(res => res.json())
 		  	.then(
 			(result) => {
-				console.log(result)
+				// console.log(result)
 			  this.setState({
 				isLoaded: true,	
 				appartments: result

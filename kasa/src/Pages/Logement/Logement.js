@@ -9,9 +9,9 @@ import Loader from '../Loader/Loader'
 
 export default class Logement extends Component {
 
-	constructor(props) {
+	constructor() {
 		// Gestion du state (idLocation = id du logement récupéré dans l'url, appartments = objet contenant les datas du logement, etoilesDiv = tableau récupérant les étoiles de notation du logement
-		super(props);
+		super();
 		this.state = {
 			error: null,
 			isLoaded: false,
@@ -28,7 +28,7 @@ export default class Logement extends Component {
 
 		fetch(process.env.PUBLIC_URL + "/data/logements.json")
 			.then(res => {
-				console.log(res)
+				// console.log(res)
 				return res.json()
 			} )
 			.then(
@@ -37,7 +37,7 @@ export default class Logement extends Component {
 					let idLocation = window.location.search.substr(4);
 					// Récupération du logement dans les datas grâce à l'id du logement récupéré dans l'url
 					let logement = result.filter((el) => el.id === idLocation)[0]
-					console.log(logement)
+					// console.log(logement)
 					if(logement === undefined) {
 						this.setState({
 							error: true
@@ -94,7 +94,7 @@ export default class Logement extends Component {
 			)
 		}
 
-		console.log(this.state.appartment)
+		// console.log(this.state.appartment)
 		// Affichage d'une page d'erreur si les données ne sont pas récupérées (changement de l'id du logement dans la barre d'adresse par exemple)
 		if (appartment === null) {return (<Error404 type="fetchError" />)}
 		if(this.state.error) {return (<Error404 type="fetchError" />)}
