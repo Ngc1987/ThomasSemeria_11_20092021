@@ -1,4 +1,8 @@
-
+<p align="center">
+	<a href="https://app.netlify.com/sites/kasarent/deploys" >
+		<img src="https://api.netlify.com/api/v1/badges/8f30a091-0da1-40fc-b714-ba4b9a8bf3a7/deploy-status"/>
+	</a>
+	</p>
 <p align="center">
 	<a href="https://github.com/Ngc1987" >
 		<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
@@ -34,10 +38,10 @@ The Kasa app help you to find the best apartment for your holidays or business t
 ![Imgur](https://i.imgur.com/IDaC9rb.png)
 ![Imgur](https://i.imgur.com/G8fIvgH.png)
 
-
-<a href="https://kasarent.netlify.app/">
-<h2 align="center">🌍 Live démo</h2>
+<p align="center">
+<a href="https://kasarent.netlify.app/">🌍 Live démo
 </a>
+</p>
 
 ## 1. Author
 
